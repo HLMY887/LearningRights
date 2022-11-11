@@ -1,6 +1,6 @@
 package xyz.hlmy.modules.sys.mapper;
 
-import xyz.hlmy.modules.sys.pojo.SysUserMenu;
+import xyz.hlmy.modules.sys.entity.SysUserMenu;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

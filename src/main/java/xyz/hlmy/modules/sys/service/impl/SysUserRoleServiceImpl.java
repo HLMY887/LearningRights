@@ -3,7 +3,7 @@ package xyz.hlmy.modules.sys.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import xyz.hlmy.modules.sys.mapper.SysUserRoleMapper;
 import xyz.hlmy.modules.sys.service.SysUserRoleService;
-import xyz.hlmy.modules.sys.pojo.SysUserRole;
+import xyz.hlmy.modules.sys.entity.SysUserRole;
 import org.springframework.stereotype.Service;
 
 /**

@@ -1,6 +1,6 @@
 package xyz.hlmy.modules.sys.service;
 
-import xyz.hlmy.modules.sys.pojo.SysRole;
+import xyz.hlmy.modules.sys.entity.SysRole;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

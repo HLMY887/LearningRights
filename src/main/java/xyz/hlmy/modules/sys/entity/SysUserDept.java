@@ -1,4 +1,4 @@
-package xyz.hlmy.modules.sys.pojo;
+package xyz.hlmy.modules.sys.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -7,28 +7,28 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 用户对应的菜单
- * @TableName SYS_USER_MENU
+ * 用户对应的部门
+ * @TableName SYS_USER_DEPT
  */
-@TableName(value ="SYS_USER_MENU")
-public class SysUserMenu implements Serializable {
+@TableName(value ="SYS_USER_DEPT")
+public class SysUserDept implements Serializable {
     /**
      * 主键
      */
     @TableId(value = "id")
-    private Long id;
+    private Integer id;
 
     /**
-     * 用户主键
+     * 用户ID
      */
     @TableField(value = "user_id")
     private Long userId;
 
     /**
-     * 菜单主键
+     * 部门ID
      */
-    @TableField(value = "menu_id")
-    private Long menuId;
+    @TableField(value = "dept_id")
+    private Long deptId;
 
     /**
      * 创建时间
@@ -42,43 +42,43 @@ public class SysUserMenu implements Serializable {
     /**
      * 主键
      */
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
     /**
      * 主键
      */
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
     /**
-     * 用户主键
+     * 用户ID
      */
     public Long getUserId() {
         return userId;
     }
 
     /**
-     * 用户主键
+     * 用户ID
      */
     public void setUserId(Long userId) {
         this.userId = userId;
     }
 
     /**
-     * 菜单主键
+     * 部门ID
      */
-    public Long getMenuId() {
-        return menuId;
+    public Long getDeptId() {
+        return deptId;
     }
 
     /**
-     * 菜单主键
+     * 部门ID
      */
-    public void setMenuId(Long menuId) {
-        this.menuId = menuId;
+    public void setDeptId(Long deptId) {
+        this.deptId = deptId;
     }
 
     /**
@@ -106,10 +106,10 @@ public class SysUserMenu implements Serializable {
         if (getClass() != that.getClass()) {
             return false;
         }
-        SysUserMenu other = (SysUserMenu) that;
+        SysUserDept other = (SysUserDept) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
-            && (this.getMenuId() == null ? other.getMenuId() == null : this.getMenuId().equals(other.getMenuId()))
+            && (this.getDeptId() == null ? other.getDeptId() == null : this.getDeptId().equals(other.getDeptId()))
             && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()));
     }
 
@@ -119,7 +119,7 @@ public class SysUserMenu implements Serializable {
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
-        result = prime * result + ((getMenuId() == null) ? 0 : getMenuId().hashCode());
+        result = prime * result + ((getDeptId() == null) ? 0 : getDeptId().hashCode());
         result = prime * result + ((getCreateTime() == null) ? 0 : getCreateTime().hashCode());
         return result;
     }
@@ -132,7 +132,7 @@ public class SysUserMenu implements Serializable {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", userId=").append(userId);
-        sb.append(", menuId=").append(menuId);
+        sb.append(", deptId=").append(deptId);
         sb.append(", createTime=").append(createTime);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");

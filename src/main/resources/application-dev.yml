@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://180.76.54.181:3306/LearningRights?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
     username: root
-    password:
+    password: 33A16F9DBAB7DBEF
   # redis配置
   redis:
     # Redis数据库索引（默认为0）

@@ -1,6 +1,6 @@
 package xyz.hlmy.modules.sys.service;
 
-import xyz.hlmy.modules.sys.pojo.SysMenu;
+import xyz.hlmy.modules.sys.entity.SysMenu;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="xyz.hlmy.modules.sys.mapper.SysMessageMapper">
 
-    <resultMap id="BaseResultMap" type="xyz.hlmy.modules.sys.pojo.SysMessage">
+    <resultMap id="BaseResultMap" type="xyz.hlmy.modules.sys.entity.SysMessage">
             <id property="code" column="code" jdbcType="TINYINT"/>
             <result property="msgDoc" column="msg_doc" jdbcType="VARCHAR"/>
     </resultMap>

@@ -16,9 +16,10 @@ import xyz.hlmy.common.util.R;
 @RequestMapping("/sys/user")
 public class UserController {
 
-
     @GetMapping("/test")
     public String test() {
         return R.ok();
     }
+
+
 }

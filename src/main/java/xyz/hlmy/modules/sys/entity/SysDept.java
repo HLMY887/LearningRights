@@ -1,4 +1,4 @@
-package xyz.hlmy.modules.sys.pojo;
+package xyz.hlmy.modules.sys.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;

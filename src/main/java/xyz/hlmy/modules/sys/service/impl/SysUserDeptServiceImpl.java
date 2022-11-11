@@ -3,7 +3,7 @@ package xyz.hlmy.modules.sys.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import xyz.hlmy.modules.sys.mapper.SysUserDeptMapper;
 import xyz.hlmy.modules.sys.service.SysUserDeptService;
-import xyz.hlmy.modules.sys.pojo.SysUserDept;
+import xyz.hlmy.modules.sys.entity.SysUserDept;
 import org.springframework.stereotype.Service;
 
 /**

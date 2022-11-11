@@ -3,7 +3,7 @@ package xyz.hlmy.modules.sys.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import xyz.hlmy.common.constant.SysConstant;
-import xyz.hlmy.modules.sys.pojo.SysMessage;
+import xyz.hlmy.modules.sys.entity.SysMessage;
 import xyz.hlmy.modules.sys.mapper.SysMessageMapper;
 import xyz.hlmy.modules.sys.service.SysMessageService;
 import org.springframework.stereotype.Service;

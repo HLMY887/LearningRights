@@ -3,7 +3,7 @@ package xyz.hlmy.modules.sys.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import xyz.hlmy.modules.sys.mapper.SysMenuMapper;
 import xyz.hlmy.modules.sys.service.SysMenuService;
-import xyz.hlmy.modules.sys.pojo.SysMenu;
+import xyz.hlmy.modules.sys.entity.SysMenu;
 import org.springframework.stereotype.Service;
 
 /**

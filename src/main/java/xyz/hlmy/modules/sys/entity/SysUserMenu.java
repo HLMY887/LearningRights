@@ -1,4 +1,4 @@
-package xyz.hlmy.modules.sys.pojo;
+package xyz.hlmy.modules.sys.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -7,11 +7,11 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 用户对应的权限
- * @TableName SYS_USER_PERMISSION
+ * 用户对应的菜单
+ * @TableName SYS_USER_MENU
  */
-@TableName(value ="SYS_USER_PERMISSION")
-public class SysUserPermission implements Serializable {
+@TableName(value ="SYS_USER_MENU")
+public class SysUserMenu implements Serializable {
     /**
      * 主键
      */
@@ -19,16 +19,16 @@ public class SysUserPermission implements Serializable {
     private Long id;
 
     /**
-     * 用户ID
+     * 用户主键
      */
     @TableField(value = "user_id")
     private Long userId;
 
     /**
-     * 权限ID
+     * 菜单主键
      */
-    @TableField(value = "permission_id")
-    private Long permissionId;
+    @TableField(value = "menu_id")
+    private Long menuId;
 
     /**
      * 创建时间
@@ -54,31 +54,31 @@ public class SysUserPermission implements Serializable {
     }
 
     /**
-     * 用户ID
+     * 用户主键
      */
     public Long getUserId() {
         return userId;
     }
 
     /**
-     * 用户ID
+     * 用户主键
      */
     public void setUserId(Long userId) {
         this.userId = userId;
     }
 
     /**
-     * 权限ID
+     * 菜单主键
      */
-    public Long getPermissionId() {
-        return permissionId;
+    public Long getMenuId() {
+        return menuId;
     }
 
     /**
-     * 权限ID
+     * 菜单主键
      */
-    public void setPermissionId(Long permissionId) {
-        this.permissionId = permissionId;
+    public void setMenuId(Long menuId) {
+        this.menuId = menuId;
     }
 
     /**
@@ -106,10 +106,10 @@ public class SysUserPermission implements Serializable {
         if (getClass() != that.getClass()) {
             return false;
         }
-        SysUserPermission other = (SysUserPermission) that;
+        SysUserMenu other = (SysUserMenu) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
-            && (this.getPermissionId() == null ? other.getPermissionId() == null : this.getPermissionId().equals(other.getPermissionId()))
+            && (this.getMenuId() == null ? other.getMenuId() == null : this.getMenuId().equals(other.getMenuId()))
             && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()));
     }
 
@@ -119,7 +119,7 @@ public class SysUserPermission implements Serializable {
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
-        result = prime * result + ((getPermissionId() == null) ? 0 : getPermissionId().hashCode());
+        result = prime * result + ((getMenuId() == null) ? 0 : getMenuId().hashCode());
         result = prime * result + ((getCreateTime() == null) ? 0 : getCreateTime().hashCode());
         return result;
     }
@@ -132,7 +132,7 @@ public class SysUserPermission implements Serializable {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", userId=").append(userId);
-        sb.append(", permissionId=").append(permissionId);
+        sb.append(", menuId=").append(menuId);
         sb.append(", createTime=").append(createTime);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");

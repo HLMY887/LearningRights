@@ -3,7 +3,7 @@ package xyz.hlmy.modules.sys.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import xyz.hlmy.modules.sys.mapper.SysUserPermissionMapper;
 import xyz.hlmy.modules.sys.service.SysUserPermissionService;
-import xyz.hlmy.modules.sys.pojo.SysUserPermission;
+import xyz.hlmy.modules.sys.entity.SysUserPermission;
 import org.springframework.stereotype.Service;
 
 /**

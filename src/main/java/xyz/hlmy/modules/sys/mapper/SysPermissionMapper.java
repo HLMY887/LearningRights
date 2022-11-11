@@ -1,6 +1,6 @@
 package xyz.hlmy.modules.sys.mapper;
 
-import xyz.hlmy.modules.sys.pojo.SysPermission;
+import xyz.hlmy.modules.sys.entity.SysPermission;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

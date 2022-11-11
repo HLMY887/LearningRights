@@ -1,4 +1,4 @@
-package xyz.hlmy.modules.sys.pojo;
+package xyz.hlmy.modules.sys.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -7,16 +7,16 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 用户对应的部门
- * @TableName SYS_USER_DEPT
+ * 用户对应的权限
+ * @TableName SYS_USER_PERMISSION
  */
-@TableName(value ="SYS_USER_DEPT")
-public class SysUserDept implements Serializable {
+@TableName(value ="SYS_USER_PERMISSION")
+public class SysUserPermission implements Serializable {
     /**
      * 主键
      */
     @TableId(value = "id")
-    private Integer id;
+    private Long id;
 
     /**
      * 用户ID
@@ -25,10 +25,10 @@ public class SysUserDept implements Serializable {
     private Long userId;
 
     /**
-     * 部门ID
+     * 权限ID
      */
-    @TableField(value = "dept_id")
-    private Long deptId;
+    @TableField(value = "permission_id")
+    private Long permissionId;
 
     /**
      * 创建时间
@@ -42,14 +42,14 @@ public class SysUserDept implements Serializable {
     /**
      * 主键
      */
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
     /**
      * 主键
      */
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -68,17 +68,17 @@ public class SysUserDept implements Serializable {
     }
 
     /**
-     * 部门ID
+     * 权限ID
      */
-    public Long getDeptId() {
-        return deptId;
+    public Long getPermissionId() {
+        return permissionId;
     }
 
     /**
-     * 部门ID
+     * 权限ID
      */
-    public void setDeptId(Long deptId) {
-        this.deptId = deptId;
+    public void setPermissionId(Long permissionId) {
+        this.permissionId = permissionId;
     }
 
     /**
@@ -106,10 +106,10 @@ public class SysUserDept implements Serializable {
         if (getClass() != that.getClass()) {
             return false;
         }
-        SysUserDept other = (SysUserDept) that;
+        SysUserPermission other = (SysUserPermission) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
             && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
-            && (this.getDeptId() == null ? other.getDeptId() == null : this.getDeptId().equals(other.getDeptId()))
+            && (this.getPermissionId() == null ? other.getPermissionId() == null : this.getPermissionId().equals(other.getPermissionId()))
             && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()));
     }
 
@@ -119,7 +119,7 @@ public class SysUserDept implements Serializable {
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
         result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
-        result = prime * result + ((getDeptId() == null) ? 0 : getDeptId().hashCode());
+        result = prime * result + ((getPermissionId() == null) ? 0 : getPermissionId().hashCode());
         result = prime * result + ((getCreateTime() == null) ? 0 : getCreateTime().hashCode());
         return result;
     }
@@ -132,7 +132,7 @@ public class SysUserDept implements Serializable {
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
         sb.append(", userId=").append(userId);
-        sb.append(", deptId=").append(deptId);
+        sb.append(", permissionId=").append(permissionId);
         sb.append(", createTime=").append(createTime);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
