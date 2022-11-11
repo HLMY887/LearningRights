@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xyz.hlmy.modules.sys.mapper.SysMessageMapper">
+
+    <resultMap id="BaseResultMap" type="xyz.hlmy.modules.sys.pojo.SysMessage">
+            <id property="code" column="code" jdbcType="TINYINT"/>
+            <result property="msgDoc" column="msg_doc" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        code,msg_doc
+    </sql>
+</mapper>
